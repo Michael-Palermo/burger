@@ -12,7 +12,7 @@ let burger = {
         });
     },
 
-    // queryString - inserty burger
+    // queryString - insert burger
     insertBurger: function (burger_name, desc, cost, callback) {
         orm.insertOne(burger_name, desc, cost, function (result) {
             callback(result);
